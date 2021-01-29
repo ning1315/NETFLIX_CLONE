@@ -1,8 +1,16 @@
+import React,{ useState, useEffect } from 'react';
+import TrendContainer from '../src/container/TrendContainer'
 
 function App() {
   return (
     <div className="App">
-     <img src="http://image.tmdb.org/t/p/w200/1ihJ0yr7v6YqP6zvPVpPKUrOuQ3.jpg"></img>
+    <div className="Nav">상단바 영역</div>
+    <div>
+    <TrendContainer></TrendContainer>
+    <TrendContainer></TrendContainer>
+    <TrendContainer></TrendContainer>
+    </div>
+    
     </div>
   );
 }

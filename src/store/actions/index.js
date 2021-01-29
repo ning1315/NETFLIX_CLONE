@@ -71,7 +71,7 @@ export const fetchDocumentariesMoviesData = (data) => {
 
 export const fetchTrending = () => {
   return (dispatch) => {
-    return axios.get(`${BASE_URL}/trending/all/week?api_key=${API_KEY}&language=en-US`)
+    return axios.get(`https://api.themoviedb.org/3/trending/movie/week?api_key=f6c50ad2d5427e9942a38f4309510e10&language=en-US`)
     .then((res) => {
       dispatch(fetchTrendData(res.data))
     })
