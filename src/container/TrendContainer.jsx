@@ -14,7 +14,7 @@ const TrendContainer = (props) => {
   console.log(TrendData)
   return (
     <div>
-      <p>Trend Movies</p>
+      <p className="movieTags">Trend Movies</p>
       <div className="movieContainer">
         { TrendData.results && TrendData.results.map((movie) => (
           <Movie poster={movie.poster_path} key={movie.id}></Movie>

@@ -10,7 +10,7 @@ export const FETCH_ROMANCE_MOVIES = 'FETCH_ROMANCE_MOVIES';
 export const FETCH_DOCUMENTARIES = 'FETCH_DOCUMENTARIES';
 
 
-const BASE_URL = 'https://api.themoviedb.org/3/'
+const BASE_URL = 'https://api.themoviedb.org/3'
 const API_KEY = 'f6c50ad2d5427e9942a38f4309510e10'
 
 export const fetchTrendData = (data) => {
@@ -81,7 +81,7 @@ export const fetchTrending = () => {
   }
 }
 
-export const fetchNetplixOriginal = () => {
+export const fetchNetflixOriginal = () => {
   return (dispatch) => {
     return axios.get(`${BASE_URL}/discover/tv?api_key=${API_KEY}&with_networks=213`)
     .then((res) => {
