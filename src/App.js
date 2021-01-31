@@ -1,6 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import TrendContainer from '../src/container/TrendContainer'
 import NetflixOriginalContainer from '../src/container/NetflixOriginalContainer'
+import TopRatedContainer from '../src/container/TopRatedContainer'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
     <div>
     <TrendContainer></TrendContainer>
     <NetflixOriginalContainer></NetflixOriginalContainer>
+    <TopRatedContainer></TopRatedContainer>
     </div>
     
     </div>
